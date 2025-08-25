@@ -1,50 +1,104 @@
-# Welcome to your Expo app 👋
+# BrandPeek
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A polished React Native app built with **Expo** that simulates a “Brand Discovery” experience.  
+It demonstrates **gradient styling**, **API integration**, and a **minimal clean UI** inspired by [nurdd.club](https://www.nurdd.club).
 
-## Get started
+---
 
-1. Install dependencies
+## ✨ Features
+- 🎨 Radial gradient background (bright deep blue glow → black edges) using **react-native-svg**
+- 🏷️ Home Screen: Displays “Top Brands Today” and fetches 5–10 brands (logo, name, one-liner) from backend API
+- 📱 Tap a brand → Navigate to **Brand Detail Screen** with full brand info
+- 🔘 Includes a “Follow” button (UI only)
+- 📂 Modular folder structure for maintainability
+- 🚀 Built with **Expo**, sharable via ExpoGo or APK
 
+---
+
+## 📂 Folder Structure
+
+
+/components → Reusable UI components
+/screens → HomeScreen, BrandDetailScreen
+/assets → Logos, images, icons
+/services → API service functions
+/navigation → AppNavigator
+/constants → Colors, styles
+/utils → Helper functions
+App.js → Entry point
+
+
+---
+
+## ⚡ Tech Stack
+- **React Native** (Expo)
+- **React Navigation**
+- **react-native-svg** (for radial gradient)
+- **Axios / Fetch API**
+- **MockAPI** (for backend data)
+
+---
+
+## 🛠️ Setup & Installation
+1. Clone the repository:
    ```bash
-   npm install
-   ```
+   git clone https://github.com/<your-username>/brandpeek.git
+   cd brandpeek
+Install dependencies:
 
-2. Start the app
+npm install
 
-   ```bash
-   npx expo start
-   ```
 
-In the output, you'll find options to open the app in a
+Start the Expo development server:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+npx expo start
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
+Run the app:
 
-When you're ready, run:
+Scan the QR code in Expo Go (Android/iOS)
 
-```bash
-npm run reset-project
-```
+Or run on emulator using a (Android) or i (iOS)
+🌐 Backend
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+MockAPI used to fetch brand data (list + details)
 
-## Learn more
+API Endpoints:
 
-To learn more about developing your project with Expo, look at the following resources:
+GET /brands → Fetch list of brands
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+GET /brands/:id → Fetch details of a brand by ID
 
-## Join the community
+📲 Live Project
 
-Join our community of developers creating universal apps.
+ExpoGo Link: [Add your link here]
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+APK Download (Optional): [Add APK link here]
+
+QR Code: [Add QR code here]
+
+📑 Submission Notes
+
+Backend: MockAPI (free API service)
+
+Project structured in a modular, scalable way with clear folder separation
+
+Gradient UI styled with react-native-svg RadialGradient
+
+📸 Screenshots (Optional)
+
+Add screenshots of your Home Screen & Brand Detail Screen here
+
+👨‍💻 Author
+
+Harshad More
+React Native Internship Assignment — BrandPeek
+
+
+---
+
+👉 I recommend:  
+1. Copy the **Description** into GitHub repo description field.  
+2. Add the above **README.md** to your project root before pushing.  
+
+Would you like me to also **generate a sample `services/api.js` file with MockAPI endpoints** so you can copy-paste it and the evaluator sees a clean API service layer?
